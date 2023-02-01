@@ -20,9 +20,10 @@ public class Bird extends Animal {
             fur = "no fur";
         }
         patternAnimals = "This animal is mostly " + getColor() + ". It has " + paws + " and " + fur + ". Moreover, it has 2 wings and can fly.";
+        System.out.println(patternAnimals);
         return patternAnimals;
     }
-    Bird bird = new Bird();
+
 
 
 

@@ -65,6 +65,7 @@ public class AnimalOverrideTest {
             Assertions.assertEquals("This animal is mostly blue. It has 2 paws and no fur. Moreover, it has 2 wings and can fly.", getDescription.invoke(bird), "Method getDescription() does not work correctly for Bird class");
         } catch (NoSuchMethodException | InstantiationException | IllegalAccessException |
                  InvocationTargetException e) {
+
             Assertions.fail("Some Bird class configuration problems");
         }
     }
