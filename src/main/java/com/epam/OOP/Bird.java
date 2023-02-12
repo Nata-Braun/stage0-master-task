@@ -1,9 +1,21 @@
 package com.epam.OOP;
 
-public class Bird extends Animal {
+public class Bird extends Animal{
+    static public void main (String[]args){
+        Bird bird = new Bird();
+        bird.getDescription();
+        Dog dog = new Dog();
+        dog.getDescription();
+    }
+
+
+
     public Bird() throws IllegalArgumentException {
         super("blue", 2, false);
+
     }
+
+
     @Override
     public String getDescription() {
         String patternAnimals;
@@ -23,8 +35,6 @@ public class Bird extends Animal {
         System.out.println(patternAnimals);
         return patternAnimals;
     }
-
-
 
 
 
